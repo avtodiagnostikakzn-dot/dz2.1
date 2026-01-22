@@ -1,12 +1,13 @@
-﻿#include <iostream>
-#include <string>  
+#include <iostream>
+
+#include <string>
 
 int main()
 {
-    std::string word;
-    std::cout << "Введите слово: " << "\n";
-    std::cin >> word;
-    std::cout << "Вы ввели: " << "\n" << word << std::endl;
-
+    std::string line;
+    std::cout << "Введите строку: " << std::endl;
+    std::getline(std::cin, line);
+    std::cout << "Вы ввели: " << std::endl << line;
+    
     return EXIT_SUCCESS;
 }
